@@ -1,0 +1,66 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<body>
+
+<h1>加法功能</h1>
+
+<p>
+    使用者輸入要相加的兩個數字，應該得到正確的相加結果.
+</p>
+
+<div class="example">
+
+    <h3>Example</h3>
+
+    <p>假設按照以下表格輸入被加數與加數，應該會得到正確的結果</p>
+
+    <table concordion:execute="#result = getAddingResult(#summand, #addend)">
+        <tr>
+            <th concordion:set="#summand">被加數</th>
+            <th concordion:set="#addend">加數</th>
+            <th concordion:assertEquals="#result">相加結果</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>22</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>21</td>
+            <td>29</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
