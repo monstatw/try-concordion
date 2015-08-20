@@ -1,0 +1,12 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<body>
+    <p>
+        對<span concordion:set="#name">Johnson</span>的歡迎詞會是:<br/>
+        <span concordion:assertEquals="getGreeting(#name)">Hello Johnson!</span>
+    </p>
+    <p>
+        對<span concordion:set="#name">John</span>的歡迎詞會是:<br/>
+        <span concordion:assertEquals="getGreeting(#name)">Hello John!</span>
+    </p>
+</body>
+</html>
